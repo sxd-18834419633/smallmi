@@ -1,0 +1,1537 @@
+/* 清除默认格式 */
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+    box-sizing:border-box;
+}
+img{
+    border:none;
+}
+/* 头部开始 */
+/* 头部最外边大盒子 */
+.head-box{
+    background:#333;
+    width:100%;
+    height:40px;
+}
+/* 居中内容盒子 */
+.head-center{
+    height:40px;
+    width:1226px;
+    background:#333;
+    margin:0 auto;
+}
+/* 左边内容*/
+.head-left{
+    line-height:40px;
+    float:left;
+}
+.head-left::after{
+    content:"";
+    clear:both;
+}
+.head-left a{
+    color:#b0b0b0;
+    font-size:12px;
+}
+.head-left a:hover{
+color:white;
+}
+.head-left span{
+    color:#424242;
+    margin:0 5px;
+}
+/* 右边内容 */
+.head-right{
+    line-height:40px;
+    float:right;
+}
+.head-right a{
+    color:#b0b0b0;
+    font-size:12px;
+}
+.head-right a:hover{
+    color:white;
+}
+.head-right span{
+    color:#424242;
+}
+.head-right .gouwu-car{
+    display:block;
+    background:#424242;
+    width:120px;
+    height:40px;
+    float:right;
+    text-align:center;
+    margin-left:15px;
+    position:relative;
+}
+.head-right .gouwu-car:hover{
+    background:white;
+}
+
+.head-right .gouwu-car:hover a{
+    color:orangered;
+}
+
+/* 购物车图标颜色的设置开始 */
+.gouwu-car .icon-gouwuche{
+   color:#B0B0B0;
+}
+.head-right .gouwu-car:hover i{
+    color:orangered;
+}
+.gouwu-car-center{
+    width:316px;
+    height:0;
+    background:white;
+    text-align:center;
+    line-height:82px;
+    position:absolute;
+    right:0;
+    top:40px;
+    z-index:1   ;
+    transition-property:all;
+    transition-duration:0.5s;
+    overflow: hidden;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.18);
+}
+.gouwu-car:hover .gouwu-car-center{
+    height: 82px;
+}
+.gouwu-car::after{
+    content:"";
+    clear:both;
+}
+/* 购物车图标颜色的设置结束 */
+
+/*头部结束*/
+/* 导航栏开始 */
+.navigation-box{
+    width:100%;
+    height:100px;
+    -ms-user-select:none;
+    user-select:none;
+    /*background:black;*/
+}
+.navigation{
+    width:1226px;
+    height:100px;
+    /*background:red;*/
+    margin:0 auto;
+    overflow:hidden;
+}
+.navigation img{
+   float:left;
+    margin-top:16px;
+}
+.navigation-hyperlink{
+    width:666px;
+    height:100px;
+    /*background:green;*/
+    float:left;
+    overflow:hidden;
+    margin-left:166px;
+    line-height:100px;
+    font-size:16px;
+}
+.navigation-hyperlink a{
+    color:black;
+}
+.navigation-hyperlink a:hover{
+    color:orangered;
+}
+.mi-phones{
+    display:inline-block;
+    padding:0 10px 0 10px;
+}
+.red-mi{
+    display:inline-block;
+    padding:0 10px 0 10px;
+}
+.television{
+    display:inline-block;
+    padding:0 10px 0 10px;
+}
+.notebook{
+    display:inline-block;
+    padding:0 10px 0 10px;
+}
+.home-appliance{
+    display:inline-block;
+    padding:0 10px 0 10px;
+}
+.router{
+    display:inline-block;
+    padding:0 10px 0 10px;
+}
+.hardware{
+    display:inline-block;
+    padding:0 10px 0 10px;
+}
+.service{
+    display:inline-block;
+    padding:0 10px 0 10px;
+}
+.community{
+    display:inline-block;
+    padding:0 10px 0 10px;
+}
+.search-box{
+    width:297px;
+    height:50px;
+    /*background:pink;*/
+    float:left;
+    overflow:hidden;
+    margin-left:29px;
+    margin-top:25px;
+}
+.search-content{
+    width:245px;
+    height:50px;
+    /*background:red;*/
+    float:left;
+    overflow:hidden;
+    position:relative;
+    border-left:1px solid #97a1a2;
+    border-top:1px solid #97a1a2;
+    border-bottom:1px solid #97a1a2;
+}
+.search-content input{
+    width:245px;
+    height:50px;
+    border:none;
+    outline:none;
+}
+.search-content .iphone-1{
+    font-size:10px;
+    color:#757575;
+    background:#eee;
+    position:absolute;
+    top:19px;
+    left:80px;
+}
+.iphone-1:hover{
+    background:#ff9700;
+    color:white;
+}
+.search-content .iphone-2{
+    font-size:10px;
+    color:#757575;
+    background:#eee;
+    position:absolute;
+    top:19px;
+    left:150px;
+}
+.iphone-2:hover{
+    background:#ff9700;
+    color:white;
+}
+.search-button{
+    width:52px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    /*background:green;*/
+    float:right;
+    overflow:hidden;
+    border:1px solid #97a1a2;
+}
+.search-button .icon-sousuo{
+    font-size:28px;
+}
+.search-button:hover {
+    background:#ff6700;
+}
+.search-button:hover .icon-sousuo{
+    color:white;
+}
+/* 导航栏结束 */
+
+/* 轮播图开始 */
+
+.banner{
+    width:1226px;
+    height:460px;
+    /*background:red;*/
+    margin:0 auto;
+    position:relative;
+}
+.banner-images{
+    width:1226px;
+    height:460px;
+    /*background:green;*/
+    position:relative;
+}
+.banner-images div{
+    width:1226px;
+    height:460px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.banner-images .first{
+    z-index:1;
+}
+
+/* 轮播图片开始 */
+
+.first .one{
+    width:1226px;
+    height:auto;
+}
+.two{
+    width:1226px;
+    height:auto;
+}
+.three{
+    width:1226px;
+    height:auto;
+}
+.four{
+    width:1226px;
+    height:auto;
+}
+.five{
+    width:1226px;
+    height:auto;
+}
+/* 轮播图片结束 */
+
+/* 轮播图左边文字 */
+
+.banner-left{
+    width:234px;
+    height:460px;
+    position:absolute;
+    left:0;
+    top:0;
+    background:#97a1a2;
+    color:#FFFFFF;
+    z-index:2;
+    padding-top:30px;
+}
+.banner-left a:hover{
+    background:orangered;
+}
+.banner-left .one{
+    display:block;
+    width:204px;
+    height:42px;
+    padding:0 0 0 30px;
+    color:white;
+    line-height:42px;
+}
+.icon-youjiantou4{
+    float:right;
+    overflow:hidden;
+}
+.arrow-left{
+    width:41px;
+    height:69px;
+    z-index:3;
+    color:#b0b0b0;
+    position:absolute;
+    left:233px;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+.arrow-left:hover{
+    background:gray;
+    color:white;
+}
+.icon-changyongtubiao-xianxingdaochu-zhuanqu-{
+    font-size:50px;
+    text-align:center;
+    line-height:69px;
+}
+.arrow-right{
+    width:41px;
+    height:69px;
+    z-index:3;
+    color:#b0b0b0;
+    position:absolute;
+    right:11px;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+.arrow-right:hover{
+    background:gray;
+    color:white;
+}
+.icon-changyongtubiao-xianxingdaochu-zhuanqu-1{
+    font-size:50px;
+    line-height:69px;
+    text-align:center;
+}
+
+
+/*轮播点*/
+.spot{
+    width:100px;
+    height:20px;
+    /*background:red;*/
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    z-index:2;
+}
+.spot div:hover{
+    width:8px;
+    height:8px;
+    border: 1px  solid gray;
+    background:white;
+}
+.spot1{
+    width:10px;
+    height:10px;
+    border: 1px  solid gray;
+    background:white;
+    border-radius:50%;
+    display:inline-block;
+}
+.spot2{
+    width:10px;
+    height:10px;
+    background:gray;
+    border-radius:50%;
+    display:inline-block;
+}
+.spot3{
+    width:10px;
+    height:10px;
+    background:gray;
+    border-radius:50%;
+    display:inline-block;
+}
+.spot4{
+    width:10px;
+    height:10px;
+    background:gray;
+    border-radius:50%;
+    display:inline-block;
+}
+.spot5{
+    width:10px;
+    height:10px;
+    background:gray;
+    border-radius:50%;
+    display:inline-block;
+}
+/* 轮播图结束 */
+
+.interval-1{
+    width:1226px;
+    height:14px;
+    /*background:red;*/
+    margin:0 auto;
+}
+
+/*轮播图下一块开始*/
+.information{
+    width:1226px;
+    height:170px;
+    margin:0 auto;
+    /*background:green;*/
+}
+.information-1{
+    width:234px;
+    height:170px;
+    background: #5f5750;
+    padding:3px;
+    float:left;
+    margin-right:15px;
+    position:relative;
+}
+.information-1-1{
+    width:76px;
+    height:82px;
+    /*border:1px solid white;*/
+    background:#5f5750;
+    text-align:center;
+    padding-top:12px;
+    z-index:1;
+    float:left;
+}
+.information-1-1 div {
+    color:#b0b0b0;
+ }
+.information-1-1 i {
+    font-size:24px;
+    color:#b0b0b0;
+}
+.information-1-1:hover i{
+    color:white;
+}
+.information-1-1:hover div{
+    color:white;
+}
+.information-1-2{
+    width:76px;
+    height:82px;
+    background:#5f5750;
+    text-align:center;
+    padding-top:12px;
+    z-index:1;
+    float:left;
+}
+.information-1-2 div {
+    color:#b0b0b0;
+}
+.information-1-2 i {
+    font-size:24px;
+    color:#b0b0b0;
+}
+.information-1-2:hover i{
+    color:white;
+}
+.information-1-2:hover div{
+    color:white;
+}
+.information-1-3{
+    width:76px;
+    height:82px;
+    background:#5f5750;
+    text-align:center;
+    padding-top:12px;
+    z-index:1;
+    float:left;
+}
+.information-1-3 div {
+    color:#b0b0b0;
+}
+.information-1-3 i {
+    font-size:24px;
+    color:#b0b0b0;
+}
+.information-1-3:hover i{
+    color:white;
+}
+.information-1-3:hover div{
+    color:white;
+}
+.information-1-4{
+    width:76px;
+    height:82px;
+    background:#5f5750;
+    text-align:center;
+    padding-top:12px;
+    z-index:1;
+    float:left;
+}
+.information-1-4 div {
+    color:#b0b0b0;
+}
+.information-1-4 i {
+    font-size:24px;
+    color:#b0b0b0;
+}
+.information-1-4:hover i{
+    color:white;
+}
+.information-1-4:hover div{
+    color:white;
+}
+.information-1-5{
+    width:76px;
+    height:82px;
+    background:#5f5750;
+    text-align:center;
+    padding-top:12px;
+    z-index:1;
+    float:left;
+}
+.information-1-5 div {
+    color:#b0b0b0;
+}
+.information-1-5 i {
+    font-size:24px;
+    color:#b0b0b0;
+}
+.information-1-5:hover i{
+    color:white;
+}
+.information-1-5:hover div{
+    color:white;
+}
+.information-1-6{
+    width:76px;
+    height:82px;
+    background:#5f5750;
+    z-index:1;
+    float:left;
+    text-align:center;
+    padding-top:12px;
+}
+.information-1-6 div {
+    color:#b0b0b0;
+}
+.information-1-6 i {
+    font-size:24px;
+    color:#b0b0b0;
+}
+.information-1-6:hover i{
+    color:white;
+}
+.information-1-6:hover div{
+    color:white;
+}
+.information-2{
+    width:316px;
+    height:170px;
+    /*background:blue;*/
+    float:left;
+    margin-right:14px;
+}
+.information-2 img{
+    width:316px;
+}
+.information-3{
+    width:316px;
+    height:170px;
+    /*background:greenyellow;*/
+    float:left;
+    margin-right:14px;
+}
+.information-3 img{
+    width:316px;
+}
+.information-4{
+    width:316px;
+    height:170px;
+    /*background:purple;*/
+    float:left;
+}
+.information-4 img{
+    width:316px;
+}
+/*轮播图下一块结束*/
+
+.interval-2{
+    width:1226px;
+    height:26px;
+    /*background:red;*/
+    margin:0 auto;
+}
+
+.background-box{
+    background:#f5f5f5;
+}
+/*小米闪购开始*/
+.flash-purchase{
+    width:100%;
+    height:397px;
+}
+.xmsg{
+    width:1226px;
+    height:58px;
+    /*background:black;*/
+    margin:0 auto;
+    z-index:1;
+
+}
+.xmsg-left{
+    width:100px;
+    height:58px;
+    float:left;
+    line-height:58px;
+    font-size:22px;
+    font-weight:200;
+    overflow:hidden;
+}
+.xmsg-right {
+    width:116px;
+    height:58px;
+    float: right;
+    overflow: hidden;
+}
+.xmsg-right .you{
+    margin-top:14px;
+}
+.xmsg-right .zuo{
+     margin-top:14px;
+}
+.xmsg-right .zuo:hover{
+    color:orangered;
+}
+.xmsg-right .you:hover{
+    color:orangered;
+}
+.zuo .icon-zuojiantou{
+    width:58px;
+    height:30px;
+    border:1px solid #b0b0b0;
+    font-size:30px;
+    text-align:center;
+    float: right;
+    overflow: hidden;
+    line-height:30px;
+}
+.you .icon-youjiantou4{
+    width:58px;
+    height:30px;
+    border:1px solid #b0b0b0;
+    font-size:30px;
+    text-align:center;
+    float: right;
+    overflow: hidden;
+    line-height:30px;
+}
+.wave{
+    width:1226px;
+    height:340px;
+    /*background:red;*/
+    margin:0 auto;
+}
+.wave-5{
+    width:234px;
+    height:339px;
+    background:#f1eded;
+    float:left;
+    overflow:hidden;
+}
+.wave-5 .scene{
+    text-align:center;
+    color:red;
+    font-size:21px;
+    margin-top:60px;
+}
+.wave-5 img{
+    width:34px;
+    margin:20px 0 0 100px;
+}
+.wave-5 .disc {
+    text-align: center;
+    color: #b0b0b0;
+    font-size: 16px;
+    margin-top:20px;
+}
+.wave-5 span{
+    width:46px;
+    height:46px;
+    background:#605751;
+    color: #f9f9f9;
+    font-size:24px;
+    line-height:46px;
+}
+.wave-5 .time{
+    text-align:center;
+    margin-top:20px;
+}
+.wave-4{
+    width:234px;
+    height:339px;
+    background:white;
+    margin-left:14px;
+    float:left;
+    overflow:hidden;
+}
+.wave-4 img{
+    width:160px;
+    margin:30PX 0 0 37PX;
+}
+.wave-4 h3{
+    font-size:16px;
+    text-align:center;
+    font-weight:normal;
+}
+.wave-4 p{
+    text-align:center;
+    color:#b0b0b0;
+    font-size:12px;
+}
+.wave-4 .price{
+    color:#ff6700;
+    margin:10px;
+}
+.wave-3{
+    width:234px;
+    height:339px;
+    background:white;
+    margin-left:14px;
+    float:left;
+    overflow:hidden;
+}
+.wave-3 img{
+    width:160px;
+    margin:30PX 0 0 37PX;
+}
+.wave-3 h3{
+    font-size:16px;
+    text-align:center;
+    font-weight:normal;
+}
+.wave-3 p{
+    text-align:center;
+    color:#b0b0b0;
+    font-size:12px;
+}
+.wave-3 .price{
+    color:#ff6700;
+    margin:10px;
+}
+.wave-2{
+    width:234px;
+    height:339px;
+    background:white;
+    margin-left:14px;
+    float:left;
+    overflow:hidden;
+}
+.wave-2 img{
+    width:160px;
+    margin:30PX 0 0 37PX;
+}
+.wave-2 h3{
+    font-size:16px;
+    text-align:center;
+    font-weight:normal;
+}
+.wave-2 p{
+    text-align:center;
+    color:#b0b0b0;
+    font-size:12px;
+}
+.wave-2 .price{
+    color:#ff6700;
+    margin:10px;
+}
+.wave-1{
+    width:234px;
+    height:339px;
+    background:white;
+    margin-left:14px;
+    float:left;
+    overflow:hidden;
+}
+.wave-1 img{
+    width:160px;
+    margin:30PX 0 0 37PX;
+}
+.wave-1 h3{
+    font-size:16px;
+    text-align:center;
+    font-weight:normal;
+}
+.wave-1 p{
+    text-align:center;
+    color:#b0b0b0;
+    font-size:12px;
+}
+.wave-1 .price{
+    color:#ff6700;
+    margin:10px;
+}
+
+/*小米闪购结束*/
+
+.interval-2{
+    width:1226px;
+    height:26px;
+    /*background:red;*/
+    margin:0 auto;
+}
+
+/*小米Pro开始*/
+.pro-box{
+    width:1226px;
+    height:120px;
+    background:yellow;
+    margin:0 auto;
+}
+.pro img{
+    width:1226px;
+}
+/*小米Pro结束*/
+
+/*手机开始*/
+.shouji-box{
+    width:1226px;
+    height:58px;
+    line-height:58px;
+    /*background:lightcyan;*/
+    margin:0 auto;
+}
+.shouji-left{
+    font-size:22px;
+    line-height:58px;
+    float:left;
+    overflow:hidden;
+}
+.shouji-right{
+    line-height: 58px;
+    display:inline-block;
+    float: right;
+    overflow: hidden;
+}
+.shouji-right i{
+    font-size:24px;
+    line-height: 58px;
+    display:inline-block;
+    float: right;
+    overflow: hidden;
+    margin-left:5px;
+}
+.shouji-right:hover{
+    color:orangered;
+}
+.phone-gongge{
+    width:1226px;
+    height:614px;
+    /*background:lawngreen;*/
+    margin:0 auto;
+    position:relative;
+}
+.xiaomi-mix{
+    width:234px;
+    height:614px;
+    /*background:fuchsia;*/
+}
+.xiaomi-mix img{
+    width:234px;
+}
+.xiaomi-mix:hover{
+    box-shadow:0 1px 8px grey;
+}
+.gongge{
+    width:992px;
+    height:614px;
+    background:white;
+    position:absolute;
+    top:0;
+    right:0;
+
+}
+.gongge img{
+    width:160px;
+    margin:20PX 0 0 37PX;
+}
+.kuai h3{
+    font-size:14px;
+    font-weight:normal;
+    text-align:center;
+}
+.gongge p{
+    text-align:center;
+    color:#b0b0b0;
+    font-size:12px;
+}
+.gongge .price{
+    color:#ff6700;
+    margin:10px;
+}
+.money{
+    text-decoration:line-through;
+    color:#b0b0b0;
+}
+.gongge div{
+    width:234px;
+    height:300px;
+    /*background:red;*/
+    margin:0 0 14px 14px;
+    float:right;
+    overflow:hidden;
+}
+.gongge .kuai:hover{
+    box-shadow:0 0 8px grey;
+}
+/*手机结束*/
+
+.interval-2{
+    width:1226px;
+    height:26px;
+    /*background:red;*/
+    margin:0 auto;
+}
+
+/*小米Pro开始*/
+.chang-box{
+    width:1226px;
+    height:120px;
+    /*background:yellow;*/
+    margin:0 auto;
+}
+.picter img{
+    width:1226px;
+}
+/*小米Pro结束*/
+
+/*家电开始*/
+.gongge-box-first{
+    width:1226px;
+    height:58px;
+
+    /*background:lightcyan;*/
+    margin:0 auto;
+    overflow:hidden;
+}
+.gongge-left{
+    font-size:22px;
+    line-height:58px;
+    float:left;
+    overflow:hidden;
+}
+.gongge-right{
+    margin-top:18px;
+    overflow:hidden;
+}
+.gongge-right div{
+    font-size:16px;
+    float:right;
+    overflow:hidden;
+    margin-left:20px;
+}
+.gongge-right div::after{
+    content:"";
+    width:100%;
+    height:2px;
+    margin-top:2px;
+
+    display:block;
+}
+.gongge-right div:hover{
+    color:#ff9700;
+}
+.gongge-right div:hover::after{
+    background:#ff9700;
+}
+.gongge2:hover{
+    box-shadow:0 1px 8px grey;
+}
+.gongge3:hover{
+    box-shadow:0 1px 8px grey;
+}
+.gongge-box-second{
+    width:1226px;
+    height:614px;
+    /*background:green;*/
+    margin:0 auto;
+}
+.gongge2{
+    width:234px;
+    height:300px;
+    background:white;
+    margin:0 0 14px 14px;
+    float:left;
+    overflow:hidden;
+}
+.gongge3{
+    width:234px;
+    height:300px;
+    /*background:black;*/
+    margin:0 0 14px 0;
+    float:left;
+    overflow:hidden;
+}
+.gongge4{
+    width:234px;
+    height:300px;
+    background:#F5F5F5;
+    margin:0 0 14px 14px;
+    float:left;
+    overflow:hidden;
+}
+.small-gongge4-1{
+    width:234px;
+    height:143px;
+    background:white;
+    margin:0 0 14px 0;
+}
+.small-gongge4-1:hover{
+    box-shadow:0 1px 8px grey;
+}
+.small-gongge4-2{
+    width:234px;
+    height:143px;
+    background:white;
+    margin:0 0 14px 0;
+}
+.small-gongge4-2:hover{
+    box-shadow:0 1px 8px grey;
+}
+.gongge2 img{
+    width:160px;
+    margin:20PX 0 0 37PX;
+}
+.gongge3 img{
+    width:234px;
+}
+.small-gongge4-1 img{
+    width:80px;
+    margin:31PX 14px 31px 0;
+    float:right;
+    overflow:hidden;
+}
+.gongge2 .biaoti{
+    text-align:center;
+    font-size:14px;
+
+}
+.gongge2 p{
+    text-align:center;
+    color:#b0b0b0;
+    font-size:13px;
+    margin-top:10px;
+}
+.gongge2 .price2{
+    color:#ff6700;
+    margin-top:15px;
+}
+.gongge2 .money2{
+    text-decoration:line-through;
+    color:#b0b0b0;
+    margin-left:5px;
+}
+.small-gongge4-1 .small-biaoti-1{
+    font-size:20px;
+    text-align:left;
+    padding-top:35px;
+    padding-left:15px;
+
+}
+.small-gongge4-2 .small-biaoti-2{
+    font-size:28px;
+    margin-left:15px;
+    padding-top:50px;
+}
+.small-gongge4-1 p{
+    font-size:16px;
+    text-align:left;
+    margin-left:15px;
+    margin-top:10px;
+    color:orangered;
+}
+.small-gongge4-2 p{
+    font-size:16px;
+    margin-left:-165px;
+}
+.small-gongge4-2 i{
+    font-size:60px;
+    color:orangered;
+    float:right;
+    overflow:hidden;
+    margin-top:-65px;
+}
+/*家电结束*/
+
+/*视频开始*/
+.shipin-box{
+    width:1226px;
+    height:58px;
+    line-height:58px;
+    /*background:lightcyan;*/
+    margin:0 auto;
+}
+.shipin-left{
+    font-size:22px;
+    line-height:58px;
+    float:left;
+    overflow:hidden;
+}
+.shipin-right{
+    line-height: 58px;
+    display:inline-block;
+    float: right;
+    overflow: hidden;
+}
+.shipin-right i{
+    font-size:24px;
+    line-height: 58px;
+    display:inline-block;
+    float: right;
+    overflow: hidden;
+    margin-left:5px;
+}
+.shipin-right:hover{
+    color:orangered;
+}
+.shipin-gongge{
+    width:1226px;
+    height:285px;
+    /*background:red;*/
+    margin:0 auto;
+}
+.shipin-gongge .shipin-gongge-1{
+    width:296px;
+    height:285px;
+    /*background:green;*/
+    margin-right:14px;
+    float:left;
+    overflow:hidden;
+    position:relative;
+}
+.shipin-gongge .shipin-gongge-2{
+    width:296px;
+    height:285px;
+    /*background:green;*/
+    margin-right:14px;
+    float:left;
+    overflow:hidden;
+    position:relative;
+}
+.shipin-gongge .shipin-gongge-3{
+    width:296px;
+    height:285px;
+    /*background:green;*/
+    margin-right:14px;
+    float:left;
+    overflow:hidden;
+    position:relative;
+}
+.shipin-gongge .shipin-gongge-4{
+    width:296px;
+    height:285px;
+    /*background:green;*/
+    float:left;
+    overflow:hidden;
+    position:relative;
+}
+.shipin-gongge div img{
+    width:296px;
+    height:auto;
+}
+.shipin-gongge .shipin-gongge-1:hover{
+    box-shadow:0 1px 8px grey;
+}
+.shipin-gongge .shipin-gongge-2:hover{
+    box-shadow:0 1px 8px grey;
+}
+.shipin-gongge .shipin-gongge-3:hover{
+    box-shadow:0 1px 8px grey;
+}
+.shipin-gongge .shipin-gongge-4:hover{
+    box-shadow:0 1px 8px grey;
+}
+.shipin-gongge div div{
+    text-align:center;
+    margin-top:25px;
+}
+.bofang-1{
+    width:30px;
+    height:20px;
+    border:1px solid white;
+    border-radius:10px;
+    position:absolute;
+    top:110px;
+    left:20px;
+}
+.bofang-2{
+    width:30px;
+    height:20px;
+    border:1px solid white;
+    border-radius:10px;
+    position:absolute;
+    top:110px;
+    left:20px;
+}
+.bofang-3{
+    width:30px;
+    height:20px;
+    border:1px solid white;
+    border-radius:10px;
+    position:absolute;
+    top:110px;
+    left:20px;
+}
+.bofang-4{
+    width:30px;
+    height:20px;
+    border:1px solid white;
+    border-radius:10px;
+    position:absolute;
+    top:110px;
+    left:20px;
+}
+.bofang-1:hover{
+    width:30px;
+    height:20px;
+    background:orangered;
+}
+.bofang-2:hover{
+    width:30px;
+    height:20px;
+    background:orangered;
+}
+.bofang-3:hover{
+    width:30px;
+    height:20px;
+    background:orangered;
+}
+.bofang-4:hover{
+    width:30px;
+    height:20px;
+    background:orangered;
+}
+.icon-z{
+    color:white;
+    font-size:16px;
+    text-align:center;
+}
+/*视频结束*/
+
+/*服务开始*/
+.fuwu {
+    width: 1226px;
+    height: 272px;
+    /*background: red;*/
+    margin: 26px auto 0;
+}
+.fuwu .fuwu-first{
+    width:1226px;
+    height:80px;
+    /*background:green;*/
+    padding:27px 0;
+    border-bottom:1px solid #F0F0F0;
+}
+.fuwu .fuwu-first a{
+    display:block;
+    height:25px;
+    width:241px;
+    color:black;
+    font-size:16px;
+    float:left;
+    overflow:hidden;
+    text-align:center;
+}
+.fuwu .fuwu-first a:hover{
+    color:orangered;
+}
+.fuwu .fuwu-first span{
+    float:left;
+    overflow:hidden;
+}
+.icon-xiuli{
+    font-size:24px;
+}
+.icon-7tianwuliyoutuihuo{
+    font-size:24px;
+}
+.icon-15tianwuliyoutuihuo{
+    font-size:24px;
+}
+.icon-icon-test{
+    font-size:24px;
+}
+.icon-zhizhen{
+    font-size:24px;
+}
+.fuwu-second-left{
+    width:960px;
+    height:192px;
+    /*background:gray;*/
+    float:left;
+    overflow:hidden;
+}
+.fuwu-second-left .one{
+    margin-top:26px;
+    width:960px;
+    height:35px;
+    /*background:yellow;*/
+    border-right:1px solid #F0F0F0;
+}
+.fuwu-second-left .one div{
+    width:159px;
+    height:17px;
+    font-size:14px;
+    float:left;
+    overflow:hidden;
+}
+.fuwu-second-left .two{
+    width:960px;
+    height:100px;
+    /*background:red;*/
+    border-right:1px solid #F0F0F0;
+}
+.fuwu-second-left .two div{
+    width:159px;
+    height:17px;
+    font-size:12px;
+    float:left;
+    overflow:hidden;
+    margin-top:10px;
+}
+.fuwu-second-left .two div:hover{
+    color:orangered;
+}
+.fuwu-second-right{
+    width:266px;
+    height:192px;
+    /*background:yellow;*/
+    float:left;
+    overflow:hidden;
+}
+.fuwu-second-right .one{
+    margin-top:26px;
+    color:orangered;
+    text-align:center;
+    margin-bottom:20px;
+}
+.fuwu-second-right .two{
+    width:251px;
+    height:36px;
+    text-align:center;
+}
+.fuwu-second-right .three{
+    width:251px;
+    height:36px;
+    text-align:center;
+}
+
+.fuwu-second-right .four{
+    width:120px;
+    height:30px;
+    margin-left:70px;
+    color:orangered;
+    border:1px solid orangered;
+    text-align:center;
+}
+.fuwu-second-right .four:hover{
+    color:white;
+    background:orangered;
+}
+/*服务结束*/
+
+/*底部开始*/
+.bottom{
+    width: 100%;
+    height: 248px;
+    background:#FAFAFA;
+    margin: 26px auto 0;
+
+}
+.bottom-lnner-width{
+    width: 1226px;
+    height: 180px;
+    /*background: green;*/
+    margin:0 auto;
+    overflow:hidden;
+
+}
+.bottom-lnner-width img{
+    width: 57px;
+    height:auto;
+    margin-right:10px;
+    float:left;
+}
+.bottom-navigation{
+    width: 1159px;
+    height: 36px;
+    /*background: yellow;*/
+    float:left;
+    overflow:hidden;
+    word-break:break-all;
+}
+.bottom-navigation a{
+    color:black;
+    float:left;
+    font-size:12px;
+}
+.bottom-navigation a:hover{
+    color:#ff9700;
+}
+.bottom-navigation span{
+    float:left;
+    font-size:12px;
+    color:#2f2e2e;
+    margin:0 2px;
+}
+.bottom-information{
+    width: 1159px;
+    height: 70px;
+    /*background:purple;*/
+    float:left;
+}
+.bottom-information p{
+    font-size:12px;
+    color:#B0B0B0;
+}
+.bottom-information span:hover{
+    color:#ff9700;
+}
+.authentication{
+    width: 465px;
+    height: 28px;
+    /*background:pink;*/
+    float:left;
+    margin-left:67px;
+}
+.authentication img{
+    width: 83px;
+    height: auto;
+}
+.xiaomi-title{
+    font-size:20px;
+    color:darkgray;
+
+    text-align:center;
+}
+/*底部结束*/
+/*侧导航开始*/
+.side-navigation{
+    width:84px;
+    height:465px;
+    background:darkgray;
+    position:fixed;
+    right:0;
+    top:120px;
+    z-index:2;
+}
+.side-navigation div{
+    width:84px;
+    height:92px;
+    font-size:14px;
+    background:#f5f5f5;
+    text-align:center;
+    margin-top:1px;
+    padding-top:20px;
+}
+.s-n-1 .icon-shouji-tianchong{
+    font-size:30px;
+    margin-top:30px;
+    position:relative;
+}
+.s-n-2 .icon-icongerenzhongxin-01{
+    font-size:30px;
+}
+.s-n-3 .icon-buoumaotubiao46{
+    font-size:30px;
+}
+.s-n-4 .icon-service-fill{
+    font-size:30px;
+}
+.s-n-5 .icon-gouwuche1{
+    font-size:30px;
+}
+.s-n-1:hover{
+    color:#ff9700;
+}
+.s-n-2:hover{
+    color:#ff9700;
+}
+.s-n-3:hover{
+    color:#ff9700;
+}
+.s-n-4:hover{
+    color:#ff9700;
+}
+.s-n-5:hover{
+    color:#ff9700;
+}
+.QR-code{
+    height:184px;
+    width:auto;
+    position:absolute;
+    top:0;
+    right:100px;
+    display:none;
+}
+.s-n-1:hover .QR-code{
+    display:inline-block;
+}
+/*侧导航结束*/
+
+
